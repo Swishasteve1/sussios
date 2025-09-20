@@ -1,41 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sussio's Hot Sauce</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- SEO basics -->
+  <meta name="description" content="Sussio’s Hot Sauce — bold heat and flavor made by friends, for friends.">
+  <meta name="theme-color" content="#ff4d2d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sussio's Hot Sauce">
+  <meta property="og:description" content="Bold heat. Real flavor. Why eat clean when you can eat Sussio?">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sussios.com/">
+  <meta property="og:image" content="https://sussios.com/logo.png">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Sussio's Hot Sauce Logo" class="logo">
-    <h1>Sussio's Hot Sauce</h1>
-    <p class="tagline">Why eat clean when you can eat Sussio?</p>
+  <!-- Decorative gradient backdrop -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <header class="site-nav">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="logo.png" alt="Sussio's Hot Sauce logo" />
+      <span class="brand-name">Sussio’s</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#follow">Follow</a>
+      <a class="btn btn--outline" href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="about">
-      <h2>About Us</h2>
-      <p>
-        Sussio’s is a bold new hot sauce made by friends, for friends. 
-        We’re bringing heat and flavor straight from our kitchen to your table.
-      </p>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bold Heat. Real Flavor.</h1>
+        <p class="subhead">Why eat clean when you can eat <strong>Sussio</strong>?</p>
+        <div class="cta">
+          <a class="btn" href="https://www.instagram.com/sussioshotsauce/" target="_blank" rel="noopener">Follow on Instagram</a>
+          <a class="btn btn--ghost" href="https://www.facebook.com/Sussioshotsauce/?rdid=H300hOnEFGXYCQdd" target="_blank" rel="noopener">Like on Facebook</a>
+        </div>
+        <ul class="badges" aria-label="Highlights">
+          <li>Small-batch</li>
+          <li>Big flavor</li>
+          <li>Texas made</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img src="logo.png" alt="Sussio's bottle mark" class="hero-logo" />
+      </div>
     </section>
 
-    <section class="updates">
-      <h2>Stay Updated</h2>
-      <p>
-        Follow us for product launches, events, and ways to get your bottle of Sussio’s Hot Sauce!
-      </p>
-      <div class="social-links">
-        <a href="https://instagram.com/" target="_blank">Instagram</a>
-        <a href="https://facebook.com/" target="_blank">Facebook</a>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>About Us</h2>
+            <p>
+              Sussio’s is a bold hot sauce made by friends, for friends—crafted to slam spicy, smoky, and tangy notes in perfect balance. We’re bringing heat and flavor straight from our kitchen to your table.
+            </p>
+            <p>
+              First drop coming soon. Hit follow to catch launch dates, tastings, and where to grab your bottle.
+            </p>
+            <div class="social-row">
+              <a class="icon-btn" href="https://www.instagram.com/sussioshotsauce/" target="_blank" rel="noopener" aria-label="Sussio's on Instagram">
+                <!-- Instagram SVG -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001A5.5 5.5 0 0 1 12 7.5zm0 2a3.5 3.5 0 1 0 .001 7.001A3.5 3.5 0 0 0 12 9.5zM18 6.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a class="icon-btn" href="https://www.facebook.com/Sussioshotsauce/?rdid=H300hOnEFGXYCQdd" target="_blank" rel="noopener" aria-label="Sussio's on Facebook">
+                <!-- Facebook SVG -->
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.5l.5-3h-3V9.5c0-.9.3-1.5 1.6-1.5H17V5.3C16.6 5.2 15.7 5 14.7 5 12.6 5 11 6.4 11 9v2H8.5v3H11v8h2.5z"/></svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Flavor Profile</h3>
+            <ul class="checklist">
+              <li>Smoky chili backbone</li>
+              <li>Zesty citrus pop</li>
+              <li>Clean finishing heat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLLOW -->
+    <section id="follow" class="section section--alt">
+      <div class="container narrow">
+        <h2>Be first to know</h2>
+        <p>Launch updates, tastings, and merch drops—follow us and stay spicy.</p>
+        <div class="cta">
+          <a class="btn" href="https://www.instagram.com/sussioshotsauce/" target="_blank" rel="noopener">Follow on Instagram</a>
+          <a class="btn btn--ghost" href="https://www.facebook.com/Sussioshotsauce/?rdid=H300hOnEFGXYCQdd" target="_blank" rel="noopener">Like on Facebook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>For pop-ups, wholesale, or collabs: <a class="link" href="mailto:hello@sussios.com">hello@sussios.com</a></p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Sussio’s Hot Sauce. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.png" alt="" class="footer-logo" />
+          <span>Sussio’s Hot Sauce</span>
+        </div>
+        <p class="small">&copy; <span id="year"></span> Sussio’s Hot Sauce. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#follow">Follow</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a class="social-pill" href="https://www.instagram.com/sussioshotsauce/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001A5.5 5.5 0 0 1 12 7.5zm0 2a3.5 3.5 0 1 0 .001 7.001A3.5 3.5 0 0 0 12 9.5zM18 6.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+          <span>@sussioshotsauce</span>
+        </a>
+        <a class="social-pill" href="https://www.facebook.com/Sussioshotsauce/?rdid=H300hOnEFGXYCQdd" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.5l.5-3h-3V9.5c0-.9.3-1.5 1.6-1.5H17V5.3C16.6 5.2 15.7 5 14.7 5 12.6 5 11 6.4 11 9v2H8.5v3H11v8h2.5z"/></svg>
+          <span>/Sussioshotsauce</span>
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
